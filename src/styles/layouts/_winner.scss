@@ -1,0 +1,40 @@
+.table {
+  margin-bottom: 100px;
+}
+
+.table td, .table th {
+  font-size: 20px;
+  padding: 8px;
+}
+
+.table th {
+  background-color: $color-light;
+}
+
+.table-button {
+  cursor: pointer;
+  user-select: none;
+}
+
+.table-button.asc::after {
+  content: 'asc'
+}
+
+.table-button.desc::after {
+  content: 'desc'
+}
+
+.message {
+  top: 50%;
+  left: calc(50% - 250px);
+  text-align: center;
+  display: none;
+  position: fixed;
+  font-size: 50px;
+  color: $color-light;
+  width: 500px;
+}
+
+.message.visible {
+  display: block;
+}

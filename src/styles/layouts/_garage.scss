@@ -1,0 +1,277 @@
+.main {
+  background-color: $color-primary;
+  padding: 10px 30px;
+}
+
+.primary, .car-item__remove {
+  background: $color-main;
+  color: $color-light;
+  border-radius: 10px; 
+  font-size: 1.1em;
+  padding: 1px;
+  height: 30px;
+  padding: 0 5px;
+  margin: 3px auto;
+  width: auto;
+  cursor: pointer;
+  user-select: none;
+  border: 2px solid $color-primary;
+  outline: 0px solid $color-main;
+  transition: border .2s linear, outline .2s linear;
+  &:hover {
+    border: 2px solid $color-primary;
+    outline: 2px solid $color-main;
+  }
+  
+}
+
+.car-flag {
+  position: relative;
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 4px dashed snow;
+  padding-right: 75px;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 80vw;
+  margin-left: 20px;
+}
+
+.button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+
+.flag {
+  position: absolute;
+  right: 100px;
+  top: -23px;
+  padding: 10px 0 0;
+  font-size: 60px;
+}
+
+.generator-button {
+  background: $color-dark;
+  color: $color-light;
+  border-radius: 10px; 
+  font-size: 1.1em;
+  padding: 0 5px;
+  height: 30px;
+  width: auto;
+  cursor: pointer;
+  user-select: none;
+  border: 2px solid $color-primary;
+  outline: 0px solid $color-main;
+  transition: border .2s linear, outline .2s linear;
+  &:hover {
+    border: 2px solid $color-primary;
+    outline: 2px solid $color-main;
+  }
+  
+}
+
+.car-item__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  column-gap: 4px;
+  width: 60px;
+
+  .car-item__name {
+    font-size: 16px;
+  }
+}
+
+
+.form {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  margin: 3px 0;
+
+  .input {
+    height: 20px;
+  }
+
+  .color {
+    height: 20px;
+  }
+
+  .button {
+    background: $color-dark;
+    color: $color-light;
+    border-radius: 10px; 
+    font-size: 1.1em;
+    padding: 0 5px;
+    height: 30px;
+    width: auto;
+    cursor: pointer;
+    user-select: none;
+    border: 2px solid $color-primary;
+    outline: 0px solid $color-main;
+    transition: border .2s linear, outline .2s linear;
+    &:hover {
+      border: 2px solid $color-primary;
+      outline: 2px solid $color-main;
+    }
+    
+  }
+}
+
+
+.garage-title {
+  margin: 10px 0;
+  font-size: 20px;
+}
+.car-item__select, .car-item__start-engine , .car-item__stop-engine {
+  background: $color-dark;
+    color: $color-light;
+    border-radius: 10px; 
+    font-size: 1.1em;
+    padding: 0 5px;
+    height: 30px;
+    width: auto;
+    cursor: pointer;
+    user-select: none;
+    border: 2px solid $color-primary;
+    outline: 0px solid $color-main;
+    transition: border .2s linear, outline .2s linear;
+    &:hover {
+      border: 2px solid $color-primary;
+      outline: 2px solid $color-main;
+    }
+}
+
+.car-item__start-engine {
+  background-color: green;
+  // padding: 0 5px;
+}
+
+.car-item__stop-engine {
+  background-color: rgb(130, 41, 41);
+  // padding: 0 5px;
+}
+
+
+.reset-button, .race-button, .prev-button, .next-button {
+  padding: 0 5px;
+}
+
+
+.car-list__item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  column-gap: 100px;
+}
+.control-wrapper {
+  min-width: 100px;
+  max-width: 400px;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+
+  .create-car {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+    height: 50px;
+  }
+
+  .update-car {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  .button {
+    display: flex;
+    justify-content: space-between;
+    .generate-cars {
+      background: $color-main;
+      color: $color-light;
+      border-radius: 10px; 
+      font-size: 1.1em;
+      padding: 2px 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 30px;
+      width: auto;
+      cursor: pointer;
+      user-select: none;
+      border: 2px solid $color-primary;
+      outline: 0px solid $color-main;
+      transition: border .2s linear, outline .2s linear;
+      &:hover {
+        border: 2px solid $color-primary;
+        outline: 2px solid $color-main;
+      }
+    }
+  }
+}
+
+.form__input {
+  font-size: 2rem;
+  background: $color-light;
+  color: $color-primary;
+  height: 30px;
+}
+
+.control-btn{
+  background: $color-main;
+  color: $color-light;
+  border-radius: 10px; 
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 80px;
+  padding: 2px;
+  cursor: pointer;
+  user-select: none;
+  border: 2px solid $color-primary;
+  outline: 0px solid $color-main;
+  transition: border .2s linear, outline .2s linear;
+  &:hover {
+    border: 2px solid $color-primary;
+    outline: 2px solid $color-main;
+  }
+}
+
+.garage-title {
+  display: flex;
+  align-items: center;
+  font-size: calc(1.5rem + 1vw);
+  letter-spacing: .03em;
+}
+
+.car-item__name {
+  padding: 0 5px;
+  font-size: calc(1rem + 1vw);
+}
+
+.car-item__car-img {
+  background: url(./assets/car.svg) center no-repeat;
+  width: 30px;
+  height: 30px;
+}
+
+.car-item__engine-commands {
+  display: flex;
+  flex-direction: row;
+  column-gap: 3px;
+  align-items: center;
+}
+
+.pagination {
+  display: flex;
+  column-gap: 3px;
+  align-items: center;
+}

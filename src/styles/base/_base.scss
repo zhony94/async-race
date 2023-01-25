@@ -1,0 +1,53 @@
+*,
+*::after,
+*::before {
+  font-family: "Roboto Condensed";
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: $color-main;
+  background: $color-background;
+  font-weight: 300;
+}
+
+button {
+  font-family: "Roboto Condensed";
+  @include adaptive-font(16, 25);
+  color: $color-main;
+}
+
+h2 {
+  @include adaptive-font(20, 50);
+  font-weight: 300;
+}
+
+h3 {
+  @include adaptive-font(16, 30);
+  font-weight: 300;
+}
+
+h4 {
+  @include adaptive-font(16, 30);
+  font-weight: 300;
+}
+
+h1,
+a,
+p {
+  @include adaptive-font(16, 20);
+}
+
+input,
+div {
+  font-family: "Roboto Condensed";
+  font-size: 1.6rem;
+  color: $color-main;
+}
+
